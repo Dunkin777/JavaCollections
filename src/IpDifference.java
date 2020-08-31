@@ -1,5 +1,3 @@
-import org.apache.commons.lang3.StringUtils;
-
 import java.io.ByteArrayInputStream;
 import java.util.Arrays;
 import java.util.List;
@@ -47,8 +45,8 @@ public class IpDifference {
         System.out.println(Math.abs(Value_1-Value_2));
 
 
-        String c = StringUtils.difference("20.0.0.10", "20.0.1.0");
-        System.out.println(c);
+       // String c = StringUtils.difference("20.0.0.10", "20.0.1.0");
+      //  System.out.println(c);
         int[] arr1 = Arrays.stream(a.split("\\.")).mapToInt(Integer::parseInt).toArray();
         List<Integer> listB = Arrays.stream(b.split("\\.")).map(Integer::parseInt).collect(Collectors.toList());
         Integer Agr1 = Arrays.stream(arr1).reduce((x, y) -> x * 256 + y).orElse(0);
